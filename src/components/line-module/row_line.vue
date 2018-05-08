@@ -20,11 +20,11 @@ export default {
     mounted() {
         // console.log(this.H);
         let linecount = parseInt(this.H / (this.height * 2));
-        console.log(linecount);
+        // console.log(linecount);
         for (let i = 0; i < linecount; i++) {
             this.lineArr.push(i)
         }
-        console.log(this.lineArr);
+        // console.log(this.lineArr);
     }
 };
 </script>
