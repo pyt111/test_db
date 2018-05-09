@@ -57,22 +57,36 @@ export default {
             colsd[i].style.top = this.col[i].top + "px";
         }
         let cargos = this.$refs.cargos;
+        console.log(cargos);
     },
     methods: {}
 };
 </script>
 
 <style lang="less" scoped>
+.slide-fade-enter {
+    opacity: 0;
+}
 .slide-fade-enter-active {
-  transition: all .3s ease;
+  transition: all 1s ease;
+}
+.slide-fade-leave {
+    opacity: 1;
+    
 }
 .slide-fade-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active for below version 2.1.8 */ {
+  transition: all 2s ;
   transform: translateX(300px);
-  opacity: 0;
+  opacity: 1;
+}
+// .slide-fade-leave-active {
+//       transition: all 2s ;
+    
+// }
+ .slide-fade-leave-to{
+/* .slide-fade-leave-active for below version 2.1.8 */ 
+//   transform: translateX(300px);
+//   opacity: 0;
 }
 #qBox {
     position: absolute;
