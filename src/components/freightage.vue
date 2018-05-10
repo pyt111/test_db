@@ -13,11 +13,11 @@ export default {
     data() {
         return {
             rwoData: [
-                { width: 400, height: 25, left: 0, top: 200 ,cargo:[1]},
-                { width: 400, height: 25, left: 0, top: 530 ,cargo:[1]},
-                { width: 1100, height: 25, left: 435, top: 150 ,cargo:[1]},
-                { width: 1100, height: 25, left: 435, top: 370 ,cargo:[1]},
-                { width: 1100, height: 25, left: 435, top: 590 ,cargo:[1]}
+                { width: 400, height: 25, left: 0, top: 200 ,cargo:[{time:10},{time:3}],},
+                { width: 400, height: 25, left: 0, top: 530 ,cargo:[{time:1},{time:4},{time:2}],},
+                { width: 1100, height: 25, left: 435, top: 150 ,cargo:[{time:6},{time:10},{time:11}],},
+                { width: 1100, height: 25, left: 435, top: 370 ,cargo:[{time:8},{time:12}],},
+                { width: 1100, height: 25, left: 435, top: 590 ,cargo:[{time:20},{time:25},{time:17}],}
             ],
             colData: [
                 { width: 35, height: 590, left: 400, top: 90 ,cargo:[1]}, //左上col
