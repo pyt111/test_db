@@ -1,0 +1,54 @@
+// @mixin animation($options: (
+//     $options: map-merge(
+//         ( 
+//             animationName: animation,
+//             duration: 1, waitTime: 0,
+//             timingFunction: linear,
+//             iterationCount: infinite ),
+//             $options
+//         )
+
+// )){
+//     $name: map-get($options, animationName);
+//     $kf: map-get($options, keyframes);
+//     $kfLength: length($kf);
+//     $duration: map-get($options, duration);
+//     $waitTime: map-get($options, waitTime);
+//     $timingFunction: map-get($options, timingFunction);
+//     $iterationCount: map-get($options, iterationCount);
+//     $counter: 1; // index of 'each'著作权归作者所有。
+//     @keyframes #{name} {
+//         @each $frame, $prop in $kf {
+//             #{$frame * $duration / ($duration + $waitTime)}{
+//                 @each $k, $v in $prop {
+//                     #{$k}: #{$v}
+//                 }
+//             }
+//         }
+//         @if $counter == $kfLength and $waitTime > 0{
+
+//         }
+//     }
+// }
+@mixin animation($animationName){
+    animation:$animationName;
+    -webkit-animation:$animationName;
+}
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+      $browser: '-webkit-' !global;
+      @content;
+    }
+    @-moz-keyframes #{$animationName} {
+      $browser: '-moz-' !global;
+      @content;
+    }
+    @-o-keyframes #{$animationName} {
+      $browser: '-o-' !global;
+      @content;
+    }
+    @keyframes #{$animationName} {
+      $browser: '' !global;
+      @content;
+    }
+  } $browser: null;

@@ -1,65 +1,80 @@
 @keyframes mymove {
     0% {
-      margin-left: 0;
-      opacity: 0;
+        margin-left: 0;
+        opacity: 0;
     }
     10% {
-      opacity: 1;
-      margin-left: 0;
+        opacity: 1;
+        margin-left: 0;
     }
     90% {
-      margin-left: 90%;
-      opacity: 1;
+        margin-left: 90%;
+        opacity: 1;
     }
     100% {
-      margin-left: 90%;
-      opacity: 0;
+        margin-left: 90%;
+        opacity: 0;
     }
-  }
-  @-webkit-keyframes mymove {
+}
+
+@-webkit-keyframes mymove {
     0% {
-      left: 0;
+        left: 0;
     }
     5% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  @keyframes moveTop {
+}
+
+@keyframes moveTop {
     0% {
-      transform: translate(0, 0);
-      opacity: 0;
+        transform: translate(0, 0);
+        opacity: 0;
     }
     10% {
-      opacity: 1;
-      transform: translate(0, 0);
+        opacity: 1;
+        transform: translate(0, 0);
     }
     90% {
-      transform: translate(0, -200px);
-      opacity: 1;
+        transform: translate(0, -200px);
+        opacity: 1;
     }
     100% {
-      transform: translate(0, -200px);
-      opacity: 0;
+        transform: translate(0, -200px);
+        opacity: 0;
     }
-  }
-  @-webkit-keyframes moveBottom {
+}
+
+@-webkit-keyframes moveBottom {
     0% {
-      transform: translate(0, 0);
-      opacity: 0;
+        transform: translate(0, 0);
+        opacity: 0;
     }
     10% {
-      opacity: 1;
-      transform: translate(0, 0);
+        opacity: 1;
+        transform: translate(0, 0);
     }
     90% {
-      transform: translate(0, 200px);
-      opacity: 1;
+        transform: translate(0, 200px);
+        opacity: 1;
     }
     100% {
-      transform: translate(0, 200px);
-      opacity: 0;
+        transform: translate(0, 200px);
+        opacity: 0;
     }
-  }
+}
+
+.activeZ {
+    z-index: 900;
+}
+
+.backg-yellow {
+    background-color: yellow !important;
+}
+
+.backg-beige {
+    background-color: beige !important;
+}
